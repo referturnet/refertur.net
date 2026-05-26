@@ -1,15 +1,30 @@
-# refertur.net
+# refertur.net — WordPress Migration Project
 
-Основной репозиторий сайта refertur.net.
+Проект миграции статичного HTML-лендинга на платформу WordPress (Blocksy + Spectra).
 
-## Структура
-- `legacy/` — исходный экспорт текущего лендинга до миграции в WordPress
-- `docs/` — документация по миграции и архитектуре
-- `patterns/` — будущие Gutenberg/Spectra patterns
-- `wordpress-migration/child-theme/` — child theme для Blocksy
-- `wordpress-migration/helper-plugin/` — служебный WP-плагин для CTA, AI-links и интеграций
+## 🚀 Текущий статус
+**Фаза 3: WordPress сборка (в процессе)**
+- ✅ Gutenberg Patterns (Hero, Services, FAQ, Stats) созданы.
+- ✅ Child Theme & Plugin функционал готов в репозитории.
+- ✅ CI/CD настроен (деплой на VPS через GitHub Actions).
 
-## Ближайшие шаги
-1. Разобрать legacy HTML на секции.
-2. Перенести контентные блоки в Gutenberg/Spectra.
-3. Вынести интерактив и AEO-логику в child theme и helper plugin.
+## 📂 Структура проекта
+- `legacy/` — исходный HTML-сайт.
+- `docs/` — документация, план миграции и Gutenberg паттерны.
+- `wordpress-migration/` — дочерняя тема и вспомогательный плагин.
+- `research/` — глубокие исследования технологий (MCP, SSH).
+
+## 🛠 Технологии
+- **CMS:** WordPress
+- **Theme:** Blocksy
+- **Constructor:** Spectra (Gutenberg)
+- **Deployment:** GitHub Actions
+
+## 📖 Важные ссылки
+- [ROADMAP.md](ROADMAP.md) — дорожная карта проекта.
+- [INDEX.md](INDEX.md) — полный список файлов и их описание.
+- [ARCHITECTURE.md](ARCHITECTURE.md) — живая архитектурная память.
+- [CHANGELOG.md](CHANGELOG.md) — история изменений.
+
+---
+© 2026 refertur.net
