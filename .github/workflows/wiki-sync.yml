@@ -1,0 +1,70 @@
+name: Sync Wiki with Docs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'ARCHITECTURE.md'
+      - 'ROADMAP.md'
+      - 'docs/content-map.md'
+  schedule:
+    # Run weekly on Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+jobs:
+  sync-wiki:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Checkout wiki
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}.wiki
+          path: wiki
+          
+      - name: Sync ARCHITECTURE.md to Wiki
+        run: |
+          if [ -f ARCHITECTURE.md ]; then
+            cp ARCHITECTURE.md wiki/Architecture.md
+            echo "✅ Synced ARCHITECTURE.md to wiki/Architecture.md"
+          fi
+          
+      - name: Sync ROADMAP.md to Wiki
+        run: |
+          if [ -f ROADMAP.md ]; then
+            cp ROADMAP.md wiki/Roadmap.md
+            echo "✅ Synced ROADMAP.md to wiki/Roadmap.md"
+          fi
+          
+      - name: Sync Content Map to Wiki
+        run: |
+          if [ -f docs/content-map.md ]; then
+            cp docs/content-map.md wiki/Content-Map.md
+            echo "✅ Synced content-map.md to wiki/Content-Map.md"
+          fi
+          
+      - name: Update Wiki timestamp
+        run: |
+          cd wiki
+          echo "Last updated: $(date '+%Y-%m-%d %H:%M:%S UTC')" >> .sync-timestamp
+          
+      - name: Commit and push to Wiki
+        run: |
+          cd wiki
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-sync from repository ($(date '+%Y-%m-%d'))" \
+                       -m "Updated from main branch" \
+                       -m "Triggered by: ${{ github.event_name }}"
+            git push
+            echo "✅ Wiki updated successfully"
+          fi
