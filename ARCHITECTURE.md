@@ -1,9 +1,8 @@
 # ARCHITECTURE — refertur.net
 
-> **Последнее обновление:** 2026-05-26  
-> **Ветка:** main  
-> **Статус:** Фаза 2 завершена, начинается Фаза 3 (WordPress сборка)
-
+> **Последнее обновление:** 2026-05-26
+>  **Ветка:** main  
+> **Статус:** Фаза 3 в процессе: Gutenberg patterns ✅ | CI/CD workflows ✅ | MVP готов к деплою
 Этот файл — живая архитектурная память проекта. Обновляется при каждом значимом изменении структуры, стека или решений.
 
 ---
@@ -194,7 +193,102 @@ wordpress/wp-content/plugins/refertur-site-core/
 - При добавлении новых Decision Log записей
 - При изменении структуры репозитория
 
-**Alternatively:** Можно автоматизировать через GitHub Actions (TODO: Фаза 5).
+**Alternatively:** Можно автоматизировать через GitHu Actions — **✅ РЕАЛИЗОВАНО** (см. `.github/workflows/wiki-sync.yml`)
+
+Синхронизация происходит автоматически:
+- При изменении файлов ARCHITECTURE.md, ROADMAP.md, docs/content-map.md
+- Еженедельно (каждый понедельник в 00:00 UTC)
+- Вручную через GitHub Actions (workflow_dispatch)
+
+---
+
+## 10. Gutenberg Patterns
+
+### 📦 Созданные паттерны
+
+В директории `docs/patterns/` созданы JSON-паттерны для WordPress Gutenberg:
+
+1. **hero.json** — Героическая секция
+   - H1 заголовок
+   - 2 CTA кнопки (Telegram/WhatsApp)
+   - Центрованная раскладка
+
+2. **services.json** — Сетка услуг (4 колонки)
+   - Блок "Послуги та переваги"
+   - 4 карточки с иконками:
+     - Пошук турів
+     - Гарантія якості
+     - Економія 40-80%
+     - Підтримка 24/7
+
+3. **faq.json** — FAQ секция
+   - 4 вопроса с ответами
+   - Аккордеон-стиль (core/details)
+
+### 🔗 Использование
+
+Паттерны можно импортировать в WordPress через:
+- WP-CLI: `wp pattern import`
+- REST API: POST `/wp/v2/patterns`
+- Ручная установка через admin panel
+
+---
+
+## 11. CI/CD и автоматизация
+
+### 🤖 GitHub Actions Workflows
+
+#### wiki-sync.yml — Автосинхронизация Wiki
+**Статус:** ✅ Активен  
+**Триггеры:**
+- Push в main (при изменении ARCHITECTURE.md, ROADMAP.md, content-map.md)
+- Расписание: еженедельно (понедельник 00:00 UTC)
+- Ручной запуск (workflow_dispatch)
+
+**Действия:**
+1. Checkout репозитория и Wiki
+2. Копирование ARCHITECTURE.md → wiki/Architecture.md
+3. Копирование ROADMAP.md → wiki/Roadmap.md
+4. Копирование docs/content-map.md → wiki/Content-Map.md
+5. Коммит и push в Wiki
+
+#### deploy.yml — Деплой на WordPress
+**Статус:** ✅ Активен  
+**Триггеры:**
+- Push в main (при изменении wordpress-migration/child-theme/** или helper-plugin/**)
+
+**Действия:**
+1. Checkout кода
+2. Настройка SSH (webfactory/ssh-agent)
+3. Rsync child theme → удаленный сервер
+4. Rsync helper plugin → удаленный сервер
+5. Flush WordPress cache (wp cache flush)
+
+**Секреты (требуются):**
+- `SSH_PRIVATE_KEY` — приватный ключ для подключения
+- `SSH_HOST` — хост сервера WordPress
+- `SSH_USER` — пользователь SSH
+
+### 🚀 Рекомендации по деплою
+
+1. **MVP деплой:**
+   ```bash
+   # Через WP-CLI
+   wp theme activate refertur-child
+   wp plugin activate refertur-site-core
+   ```
+
+2. **Импорт паттернов:**
+   ```bash
+   wp post create --post_type=wp_block --post_title="Hero Section" \
+     --post_content="$(cat docs/patterns/hero.json)"
+   ```
+
+3. **Тестирование:**
+   - Staging: `https://staging.refertur.net`
+   - Production: после проверки на staging
+
+---
 
 При каждой новой сессии:
 1. Прочитать ARCHITECTURE.md для понимания текущего состояния
