@@ -34,18 +34,19 @@
 - [ ] Загрузить child theme `refertur-child`
 - [ ] Загрузить plugin `refertur-site-core`
 
-### 3.2 Анализ legacy HTML
-- [x] Анализ legacy HTML и полная распаковка на секции ✅
-- [x] Обновить `docs/content-map.md` с детальной картой секций ✅
+### 3.2 Анализ legacy HTML ✅ ЗАВЕРШЕНО
+- [x] Анализ legacy HTML и полная распаковка на секции
+- [x] Обновить `docs/content-map.md` с детальной картой секций
 
-### 3.3 Gutenberg Patterns
-- [x] Создать `patterns/hero.json` (главная секция + CTA) ✅
-- [x] Создать `patterns/services.json` (9 карточек услуг) ✅
-- [x] Создать `patterns/faq.json` (FAQ аккордеон) ✅
+### 3.3 Gutenberg Patterns ✅ ЗАВЕРШЕНО
+- [x] Создать `docs/patterns/hero.json` (главная секция + CTA)
+- [x] Создать `docs/patterns/services.json` (9 карточек услуг)
+- [x] Создать `docs/patterns/faq.json` (FAQ аккордеон)
 
-### 3.4 Child Theme Assets
-- [ ] `assets/css/custom.css` — кастомные стили поверх Blocksy
-- [ ] `assets/js/main.js` — reveal-анимации, FAQ toggle, messenger открытие
+### 3.4 Child Theme Assets ✅ ЗАВЕРШЕНО
+- [x] `assets/css/custom.css` — кастомные стили поверх Blocksy
+- [x] `assets/js/main.js` — reveal-анимации, FAQ toggle, messenger открытие
+- [x] `functions.php` — исправлена логика подключения ассетов и зависимостей ✅ NEW
 
 ### 3.5 Сборка главной страницы
 - [ ] Hero секция (заголовок + CTA)
@@ -69,8 +70,8 @@
 
 ## Фаза 5 — CI/CD и автоматизация (2026-06) ✅ ЗАВЕРШЕНО
 
-- [x] `deploy.yml` — GitHub Actions rsync → VPS ✅
-- [x] `wiki-sync.yml` — Автосинхронизация Wiki ✅
+- [x] `deploy.yml` — GitHub Actions rsync → VPS
+- [x] `wiki-sync.yml` — Автосинхронизация Wiki
 - [ ] Авто-обновление CHANGELOG.md при коммитах
 - [ ] Уведомления в Slack / Telegram при деплое
 
