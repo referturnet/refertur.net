@@ -1,0 +1,15 @@
+/*
+Theme Name: Refertur Child
+Template: blocksy
+Description: Child theme for refertur.net migration from legacy landing to Blocksy + Spectra.
+Author: Leonid D
+Version: 0.1.0
+*/
+
+:root {
+  --rt-accent: #ff6b1a;
+  --rt-accent-2: #ffd600;
+  --rt-bg: #0d0f14;
+  --rt-text: #e8e8e8;
+  --rt-muted: #9aa3b2;
+}

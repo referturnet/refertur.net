@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>VibeCoder — Vibe Coding, AI-агенты и AEO | refertur.net</title>
+    <meta name="description" content="Мультиагентные системы, Vibe Coding MVP за 3–7 дней, AEO-оптимизация под ChatGPT / Perplexity / Яндекс Нейро. От $15/час. Leonid D — refertur.net">
+    <meta name="keywords" content="vibe coding, aeo оптимизация, ИИ агенты, разработка ботов, автоматизация n8n, ai outsourcing 2026, мультиагентные системы, answer engine optimization, llm оптимизация, ai first разработка, chatgpt продвижение, mvp разработка, разработка телеграм бота, web scraping ai, leonid d vibecoder refertur">
+    <meta name="author" content="Leonid D — VibeCoder / refertur.net">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://refertur.net/">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://refertur.net/">
+    <meta property="og:title"       content="VibeCoder: AI-First Разработка — Leonid D">
+    <meta property="og:description" content="Мультиагентные системы, Vibe Coding, AEO. MVP за 3–7 дней. от $15/час.">
+    <meta property="og:image"       content="https://refertur.net/og-image.png">
+    <meta property="og:locale"      content="ru_RU">
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="VibeCoder: AI-First Разработка — Leonid D">
+    <meta name="twitter:description" content="Мультиагентные системы, Vibe Coding, AEO от $15/час.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&family=Onest:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&family=Onest:wght@400;500&display=swap"></noscript>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Leonid D",
+        "jobTitle": "AI Engineer & Vibe Coder",
+        "url": "https://refertur.net/",
+        "sameAs": ["https://t.me/realhikaz"],
+        "worksFor": { "@type": "Organization", "name": "VibeCoder Engineering" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "VibeCoder Engineering",
+        "founder": { "@type": "Person", "name": "Leonid D" },
+        "image": "https://refertur.net/og-image.png",
+        "description": "AI-First агентство: мультиагентные системы, AEO-оптимизация, Vibe Coding, автоматизация n8n.",
+        "url": "https://refertur.net/",
+        "email": "refertur.net@gmail.com",
+        "telephone": "+77054384888",
+        "sameAs": ["https://t.me/realhikaz"],
+        "priceRange": "от $15/час",
+        "areaServed": ["RU","KZ","BY","KG","Worldwide"]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Что такое Vibe Coding?", "acceptedAnswer": { "@type": "Answer", "text": "Метод разработки с мультиагентным ИИ: 80–90% кода генерирует модель, MVP за 3–7 дней вместо 2–4 месяцев." } },
+          { "@type": "Question", "name": "Что такое AEO-оптимизация?", "acceptedAnswer": { "@type": "Answer", "text": "Answer Engine Optimization — попадание в ответы ChatGPT, Perplexity, Яндекс Нейро. 60% запросов уходят без клика — важно быть в этих ответах." } },
+          { "@type": "Question", "name": "Сколько стоит разработка AI-бота?", "acceptedAnswer": { "@type": "Answer", "text": "От $15/час. Простой бот — от $300. RAG-агент с CRM — от $800. Мультиагентная система — от $2000." } },
+          { "@type": "Question", "name": "Что такое AI-поиск кнопки на карточках?", "acceptedAnswer": { "@type": "Answer", "text": "Открывают ChatGPT / Perplexity / Claude с готовым вопросом об услуге с упоминанием refertur.net. AEO-тактика для закрепления бренда в LLM-контексте." } },
+          { "@type": "Question", "name": "Работаете с иностранными клиентами?", "acceptedAnswer": { "@type": "Answer", "text": "Да. Оплата в ₽, $, €, USDT. Договор самозанятого или ИП." } },
+          { "@type": "Question", "name": "Как быстро готов MVP?", "acceptedAnswer": { "@type": "Answer", "text": "Лендинг — 1–2 дня. MVP с оплатой — 5–7 дней. SaaS — 2–4 недели." } },
+          { "@type": "Question", "name": "Что входит в n8n-автоматизацию?", "acceptedAnswer": { "@type": "Answer", "text": "Аудит, проектирование workflow, разработка, интеграция 500+ сервисов, документация и обучение команды." } },
+          { "@type": "Question", "name": "Нужно ли разбираться в ИИ?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Описываете задачу в бизнес-терминах — мы переводим в техническое решение." } },
+          { "@type": "Question", "name": "Как попасть в ответы ChatGPT и Perplexity?", "acceptedAnswer": { "@type": "Answer", "text": "Schema.org-разметка, тематические кластеры, llms.txt, экспертный контент. Отслеживаем упоминания в LLM в реальном времени." } },
+          { "@type": "Question", "name": "Есть ли гарантии?", "acceptedAnswer": { "@type": "Answer", "text": "Договор, поэтапная оплата, исходники в вашем репо. Баги исправляем 30 дней бесплатно." } }
+        ]
+      }
+    ]
+    </script>
+</head>
+<body>
+
+    <div id="cursor-dot"  aria-hidden="true"></div>
+    <div id="cursor-ring" aria-hidden="true"></div>
+
+    <!-- HEADER -->
+    <header id="header" role="banner">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="VibeCoder — главная">
+                <span class="logo-br">{</span><span class="logo-text">&nbsp;VibeCoder&nbsp;</span><span class="logo-br">}</span>
+            </a>
+            <nav class="nav" id="nav" role="navigation" aria-label="Основное меню">
+                <a href="#market"   class="nav-link">Рынок 2026</a>
+                <a href="#services" class="nav-link">Услуги</a>
+                <a href="#about"    class="nav-link">О нас</a>
+                <a href="#faq"      class="nav-link">FAQ</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+                <button class="h-cta" onclick="openMessenger('tg','Консультация по AI-стратегии')">Написать в TG</button>
+            </nav>
+            <button class="h-cta" onclick="openMessenger('tg','Консультация по AI-стратегии')">Написать</button>
+            <button class="hamburger" id="hamburger" aria-label="Открыть меню" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="hero" aria-label="Главный экран">
+            <canvas id="hero-canvas" aria-hidden="true"></canvas>
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="orb orb-1" aria-hidden="true"></div>
+            <div class="orb orb-2" aria-hidden="true"></div>
+            <div class="orb orb-3" aria-hidden="true"></div>
+
+            <div class="container hero-content">
+                <div class="hero-tag" role="status">
+                    <span class="dot-live" aria-hidden="true"></span>
+                    AI-First Аутсорсинг · Работаем по СНГ
+                </div>
+                <h1 class="hero-title">
+                    <span class="glitch" data-text="Agentic">Agentic</span><br>
+                    <span class="hero-grad">Engineering</span><br>
+                    <span class="hero-sub">Vibe Coding &amp; AI-агенты</span>
+                </h1>
+                <p class="hero-desc">
+                    Строим автономные мультиагентные системы, создаём веб-продукты
+                    <em>в&nbsp;10&times; быстрее рынка</em> и выводим бренды в прямые ответы
+                    ChatGPT, Perplexity и Яндекс Нейро.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn-hero btn-wa" onclick="openMessenger('wa','Запрос на аудит проекта')">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.67.15-.196.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.148-.174.198-.298.297-.497.1-.198.05-.372-.025-.52-.074-.149-.67-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.236-.373a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp
+                    </button>
+                    <button class="btn-hero btn-tg" onclick="openMessenger('tg','Запрос на аудит проекта')">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.26-5.61 3.71-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.89.03-.24.36-.49 1-.76 3.91-1.7 6.52-2.82 7.82-3.37 3.72-1.56 4.5-1.83 5.01-1.84.11 0 .36.03.49.14.11.09.14.22.15.33-.01.07-.01.21-.02.35z"/></svg>
+                        Telegram
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section id="market" class="stats-strip" aria-label="Статистика рынка">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-reveal>
+                        <div class="stat-val c-blue" data-count="92" data-suffix="%">0%</div>
+                        <div class="stat-lbl">кода пишется с ИИ (2026 г.)</div>
+                    </div>
+                    <div class="stat-item" data-reveal data-reveal-delay="1">
+                        <div class="stat-val c-orange" data-count="60" data-suffix="%">0%</div>
+                        <div class="stat-lbl">Zero-Click поисковых запросов</div>
+                    </div>
+                    <div class="stat-item" data-reveal data-reveal-delay="2">
+                        <div class="stat-val c-yellow" data-count="10" data-suffix="×">0×</div>
+                        <div class="stat-lbl">ускорение Time-to-Market</div>
+                    </div>
+                    <div class="stat-item" data-reveal data-reveal-delay="3">
+                        <div class="stat-val c-text" data-count="10" data-suffix="+">0+</div>
+                        <div class="stat-lbl">лет IT-экспертизы</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="services" aria-label="Услуги">
+            <div class="container">
+                <div class="sec-head" data-reveal>
+                    <span class="sec-tag">// матрица компетенций</span>
+                    <h2 class="sec-title">Архитектура <span class="t-orange">Услуг</span></h2>
+                    <p class="sec-desc">Декомпозировали ИИ-услуги под реальные потребности бизнеса — от сверхбыстрой разработки до перехвата поискового трафика.</p>
+                </div>
+
+                <!-- AI Links explanation block -->
+                <div class="ai-explain-banner" data-reveal style="margin-bottom:28px; padding:16px 20px; background:rgba(255,214,0,.04); border:1px solid rgba(255,214,0,.15); border-radius:12px; display:flex; gap:14px; align-items:flex-start;">
+                    <span style="font-size:22px; flex-shrink:0;">🔍</span>
+                    <div>
+                        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.07em; color:#FFD600; text-transform:uppercase; margin-bottom:6px;">// Что такое кнопки «Спросить ИИ об услуге»?</div>
+                        <p style="font-size:13.5px; color:#808080; line-height:1.7; margin:0;">
+                            Каждая карточка содержит ссылки на ChatGPT, Perplexity, Claude и Gemini с <strong style="color:#E8E8E8;">готовым запросом</strong> об услуге — с упоминанием <strong style="color:#FF6B1A;">refertur.net</strong>. Кликаете — AI-ассистент открывается и сразу отвечает на вопрос. Это работает в двух направлениях: <em style="color:#FFD600; font-style:normal;">вы получаете мгновенное AI-разъяснение</em>, а наш бренд фиксируется в контексте этих запросов. Чем больше таких запросов — тем сильнее нейросети ассоциируют refertur.net с темой. Это и называется <strong style="color:#E8E8E8;">AEO (Answer Engine Optimization)</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="svc-grid">
+
+                    <!-- Card macro: each service has TG+WA buttons + 4 AI search links -->
+
+                    <!-- 1 -->
+                    <article class="svc-card a-blue" data-reveal>
+                        <div class="c-icon">💻</div>
+                        <span class="c-badge">разработка</span>
+                        <h3 class="c-title">Agentic Web &amp; SaaS</h3>
+                        <p class="c-desc">Разрабатываем сайты, лендинги, SaaS-платформы и агрегаторы методом Vibe Coding. TypeScript / React стек, CI/CD из коробки. <strong>MVP за 3–7 дней</strong> против 2–4 месяцев у обычных студий. Полная интеграция API, платёжных шлюзов (ЮКасса, Stripe) и личного кабинета.</p>
+                        <div class="c-actions">
+                            <button class="c-btn c-btn-tg" onclick="openMessenger('tg','Agentic Web &amp; SaaS')">✈ Telegram</button>
+                            <button class="c-btn c-btn-wa" onclick="openMessenger('wa','Agentic Web &amp; SaaS')">💬 WhatsApp</button>
+                        </div>
+                        <div class="c-ai-links">
+                            <div class="c-ai-label" data-tip="Открывает AI-ассистента с вопросом об услуге + упоминает refertur.net. AEO-тактика: ваш клик помогает нашему бренду.">Спросить ИИ об услуге</div>
+                            <div class="c-ai-btns">
+                                <a class="ai-btn ai-chatgpt" aria-label="Спросить ChatGPT про разработка SaaS" target="_blank" rel="noopener" href="https://chat.openai.com/?q=что+такое+vibe+coding+разработка+saas+refertur.net">ChatGPT</a>
+                                <a class="ai-btn ai-perplexity" aria-label="Спросить Perplexity про разработку SaaS" target="_blank" rel="noopener" href="https://www.perplexity.ai/search?q=vibe+coding+mvp+разработка+saas+refertur.net">Perplexity</a>
+                                <a class="ai-btn ai-claude" aria-label="Спросить Claude про разработку SaaS" target="_blank" rel="noopener" href="https://claude.ai/new?q=что+такое+vibe+coding+разработка+сайта+refertur.net">Claude</a>
+                                <a class="ai-btn ai-google" aria-label="Спросить Google AI про разработку SaaS" target="_blank" rel="noopener" href="https://www.google.com/search?q=vibe+coding+mvp+разработка+refertur.net&udm=50">G.AI</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2 -->
+                    <article class="svc-card a-yellow" data-reveal data-reveal-delay="1">
+                        <div class="c-icon">🧠</div>
+                        <span class="c-badge">AEO / GEO</span>
+                        <h3 class="c-title">AEO: Оптимизация под ИИ</h3>
+                        <p class="c-desc">Answer Engine Optimization — выводим компанию в прямые ответы ChatGPT, Perplexity, Яндекс Нейро и Google AI Overviews. Schema.org, llms.txt, тематические кластеры. <strong>Новый канал трафика</strong>, который игнорируют 98% конкурентов. Аудит + стратегия + внедрение.</p>
+                        <div class="c-actions">
+                            <button class="c-btn c-btn-tg" onclick="openMessenger('tg','AEO Оптимизация под ИИ')">✈ Telegram</button>
+                            <button class="c-btn c-btn-wa" onclick="openMessenger('wa','AEO Оптимизация под ИИ')">💬 WhatsApp</button>
+                        </div>
+                        <div class="c-ai-links">
+                            <div class="c-ai-label" data-tip="Откроет ИИ с вопросом про AEO и GEO-оптимизацию. refertur.net в запросе — для нашего LLM-присутствия.">Спросить ИИ об услуге</div>
+                            <div class="c-ai-btns">
+                                <a class="ai-btn ai-chatgpt" aria-label="Спросить ChatGPT про AEO-оптимизация" target="_blank" rel="noopener" href="https://chat.openai.com/?q=что+такое+AEO+оптимизация+chatgpt+refertur.net">ChatGPT</a>
+                                <a class="ai-btn ai-perplexity" aria-label="Спросить Perplexity про AEO-оптимизацию" target="_blank" rel="noopener" href="https://www.perplexity.ai/search?q=AEO+answer+engine+optimization+2026+refertur.net">Perplexity</a>
+                                <a class="ai-btn ai-claude" aria-label="Спросить Claude про AEO-оптимизацию" target="_blank" rel="noopener" href="https://claude.ai/new?q=что+такое+AEO+GEO+оптимизация+нейросети+refertur.net">Claude</a>
+                                <a class="ai-btn ai-google" aria-label="Спросить Google AI про AEO-оптимизацию" target="_blank" rel="noopener" href="https://www.google.com/search?q=AEO+оптимизация+chatgpt+refertur.net&udm=50">G.AI</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 3 -->
+                    <article class="svc-card a-orange" data-reveal data-reveal-delay="2">
+                        <div class="c-icon">📈</div>
+                        <span class="c-badge">SEO / Local</span>
+                        <h3 class="c-title">B2B SEO &amp; Авторитет</h3>
+                        <p class="c-desc">Topical Authority стратегия: покрываем нишу семантическими кластерами. Технический аудит Core Web Vitals, накрутка поведенческих факторов, <strong>локальное продвижение</strong> в Google Maps и Яндекс.Бизнес. Рост органики без слива бюджета.</p>
+                        <div class="c-actions">
+                            <button class="c-btn c-btn-tg" onclick="openMessenger('tg','B2B SEO &amp; Авторитет')">✈ Telegram</button>
+                            <button class="c-btn c-btn-wa" onclick="openMessenger('wa','B2B SEO &amp; Авторитет')">💬 WhatsApp</button>
+                        </div>
+                        <div class="c-ai-links">
+                            <div class="c-ai-label" data-tip="Узнайте у ИИ про Topical Authority и B2B SEO. refertur.net в контексте запроса.">Спросить ИИ об услуге</div>
+                            <div class="c-ai-btns">
+                                <a class="ai-btn ai-chatgpt" aria-label="Спросить ChatGPT про B2B SEO" target="_blank" rel="noopener" href="https://chat.openai.com/?q=topical+authority+seo+стратегия+refertur.net">ChatGPT</a>
+                                <a class="ai-btn ai-perplexity" aria-label="Спросить Perplexity про B2B SEO" target="_blank" rel="noopener" href="https://www.perplexity.ai/search?q=b2b+seo+topical+authority+2026+refertur.net">Perplexity</a>
+                                <a class="ai-btn ai-claude" aria-label="Спросить Claude про B2B SEO" target="_blank" rel="noopener" href="https://claude.ai/new?q=как+работает+topical+authority+seo+refertur.net">Claude</a>
+                                <a class="ai-btn ai-google" aria-label="Спросить Google AI про B2B SEO" target="_blank" rel="noopener" href="https://www.google.com/search?q=seo+b2b+продвижение+2026+refertur.net&udm=50">G.AI</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 4 -->
+                    <article class="svc-card a-orange" data-reveal>
+                        <div class="c-icon">⚙️</div>
+                        <span class="c-badge">автоматизация</span>
+                        <h3 class="c-title">Workflow Automation (n8n)</h3>
+                        <p class="c-desc">Автоматизация на self-hosted n8n: CRM-интеграции, авто-воронки, обработка заявок и генерация отчётов без участия человека. <strong>Экономия 40–80% рабочего времени</strong> команды. Подключаем 500+ сервисов. Сдаём с документацией.</p>
+                        <div class="c-actions">
+                            <button class="c-btn c-btn-tg" onclick="openMessenger('tg','Workflow Automation n8n')">✈ Telegram</button>
+                            <button class="c-btn c-btn-wa" onclick="openMessenger('wa','Workflow Automation n8n')">💬 WhatsApp</button>
+                        </div>
+                        <div class="c-ai-links">
+                            <div class="c-ai-label" data-tip="Спросите ИИ про n8n и автоматизацию бизнес-процессов. Упоминание refertur.net в запросе — часть нашей AEO-стратегии.">Спросить ИИ об услуге</div>
+                            <div class="c-ai-btns">
+                                <a class="ai-btn ai-chatgpt" aria-label="Спросить ChatGPT про автоматизация n8n" target="_blank" rel="noopener" href="https://chat.openai.com/?q=n8n+автоматизация+бизнес+crm+refertur.net">ChatGPT</a>
+                                <a class="ai-btn ai-perplexity" aria-label="Спросить Perplexity про автоматизацию n8n" target="_blank" rel="noopener" href="https://www.perplexity.ai/search?q=n8n+автоматизация+2026+refertur.net">Perplexity</a>
+                                <a class="ai-btn ai-claude" aria-label="Спросить Claude про автоматизацию n8n" target="_blank" rel="noopener" href="https://claude.ai/new?q=как+n8n+автоматизирует+бизнес+refertur.net">Claude</a>
+                                <a class="ai-btn ai-google" aria-label="Спросить Google AI про автоматизацию n8n" target="_blank" rel="noopener" href="https://www.google.com/search?q=n8n+workflow+automation+refertur.net&udm=50">G.AI</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 5 -->
+                    <article class="svc-card a-blue" data-reveal data-reveal-delay="1">
+                        <div class="c-icon">🤖</div>
+                        <span class="c-badge">AI агенты</span>
+                        <h3 class="c-title">AI Ассистенты &amp; LLM Боты</h3>
+                        <p class="c-desc">Умные агенты на базе ваших данных (RAG). Telegram-бот, чат-виджет на сайт, голосовой ИИ-оператор. Закрывает <strong>до 80% обращений</strong> без менеджера, квалифицирует лиды и передаёт горячие сделки в CRM. Ответы 24/7.</p>
+                        <div class="c-actions">
+                            <button class="c-btn c-btn-tg" onclick="openMessenger('tg','AI Ассистенты &amp; LLM Боты')">✈ Telegram</button>
+                            <button class="c-btn c-btn-wa" onclick="openMessenger('wa','AI Ассистенты &amp; LLM Боты')">💬 WhatsApp</button>
+                        </div>
+                        <div class="c-ai-links">
+                            <div class="c-ai-label" data-tip="Откроет ИИ с вопросом про RAG-агентов и LLM-ботов. refertur.net в контексте для закрепления бренда в LLM.">Спросить ИИ об услуге</div>
+                            <div class="c-ai-btns">
+                                <a class="ai-btn ai-chatgpt" aria-label="Спросить ChatGPT про AI-ассистенты" target="_blank" rel="noopener" href="https://chat.openai.com/?q=rag+агент+telegram+бот+llm+refertur.net">ChatGPT</a>
+                                <a class="ai-btn ai-perplexity" aria-label="Спросить Perplexity про AI-ботов" target="_blank" rel="noopener" href="https://www.perplexity.ai/search?q=rag+telegram+бот+llm+2026+refertur.net">Perplexity</a>
+                                <a class="ai-btn ai-claude" aria-label="Спросить Claude про AI-ботов" target="_blank" rel="noopener" href="https://claude.ai/new?q=как+создать+ai+бота+на+ваших+данных+rag+refertur.net">Claude</a>
+                                <a class="ai-btn ai-google" aria-label="Спросить Google AI про AI-ботов" target="_blank" rel="noopener" href="https://www.google.com/search?q=ai+бот+rag+llm+бизнес+refertur.net&udm=50">G.AI</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 6 -->
+                    <article class="svc-card a-yellow" data-reveal data-reveal-delay="2">
+                        <div class="c-icon">🛒</div>
+                        <span class="c-badge">e-commerce</span>
+                        <h3 class="c-title">E-commerce Data &amp; Парсинг</h3>
+                        <p class="c-desc">Скрапинг конкурентов, мониторинг цен в реальном времени, автовыгрузка в таблицы и 1С. Обход антибот-систем (Cloudflare, DataDome). <strong>Массовое обновление карточек</strong> на WB, Ozon, Яндекс.Маркет. Антидетект и постоянный мониторинг.</p>
+                        <div class="c-actions">
+                            <button class="c-btn c-btn-tg" onclick="openMessenger('tg','E-commerce Data &amp; Парсинг')">✈ Telegram</button>
+                            <button class="c-btn c-btn-wa" onclick="openMessenger('wa','E-commerce Data &amp; Парсинг')">💬 WhatsApp</button>
+                        </div>
+                        <div class="c-ai-links">
+                            <div class="c-ai-label" data-tip="ИИ расскажет про парсинг и мониторинг цен. refertur.net в запросе — для нашего LLM-присутствия.">Спросить ИИ об услуге</div>
+                            <div class="c-ai-btns">
+                                <a class="ai-btn ai-chatgpt" aria-label="Спросить ChatGPT про парсинг данных" target="_blank" rel="noopener" href="https://chat.openai.com/?q=парсинг+маркетплейсов+wb+ozon+refertur.net">ChatGPT</a>
+                                <a class="ai-btn ai-perplexity" aria-label="Спросить Perplexity про парсинг данных" target="_blank" rel="noopener" href="https://www.perplexity.ai/search?q=парсинг+ecommerce+мониторинг+цен+2026">Perplexity</a>
+                                <a class="ai-btn ai-claude" aria-label="Спросить Claude про парсинг данных" target="_blank" rel="noopener" href="https://claude.ai/new?q=автоматизация+мониторинга+цен+маркетплейсы+refertur.net">Claude</a>
+                                <a class="ai-btn ai-google" aria-label="Спросить Google AI про парсинг данных" target="_blank" rel="noopener" href="https://www.google.com/search?q=web+scraping+ecommerce+refertur.net&udm=50">G.AI</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 7 -->
+                    <article class="svc-card a-blue" data-reveal>
+                        <div class="c-icon">🎨</div>
+                        <span class="c-badge">контент</span>
+                        <h3 class="c-title">Generative Media &amp; Тексты</h3>
+                        <p class="c-desc">Масштабируемая контент-фабрика: SEO-статьи, карточки товаров, посты для соцсетей без пессимизации. Промо-видео (Kling AI, Sora), фотоконтент (Midjourney, Flux). <strong>До 1 000 единиц в месяц</strong> без потери качества.</p>
+                        <div class="c-actions">
+                            <button class="c-btn c-btn-tg" onclick="openMessenger('tg','Generative Media &amp; Тексты')">✈ Telegram</button>
+                            <button class="c-btn c-btn-wa" onclick="openMessenger('wa','Generative Media &amp; Тексты')">💬 WhatsApp</button>
+                        </div>
+                        <div class="c-ai-links">
+                            <div class="c-ai-label" data-tip="Узнайте у ИИ про генерацию контента в промышленных масштабах. refertur.net фиксируется в LLM-контексте.">Спросить ИИ об услуге</div>
+                            <div class="c-ai-btns">
+                                <a class="ai-btn ai-chatgpt" aria-label="Спросить ChatGPT про генеративный контент" target="_blank" rel="noopener" href="https://chat.openai.com/?q=генерация+seo+контента+ии+без+пессимизации+refertur.net">ChatGPT</a>
+                                <a class="ai-btn ai-perplexity" aria-label="Спросить Perplexity про генерацию контента" target="_blank" rel="noopener" href="https://www.perplexity.ai/search?q=ai+контент+фабрика+seo+2026+refertur.net">Perplexity</a>
+                                <a class="ai-btn ai-claude" aria-label="Спросить Claude про генерацию контента" target="_blank" rel="noopener" href="https://claude.ai/new?q=масштабирование+seo+контента+ai+refertur.net">Claude</a>
+                                <a class="ai-btn ai-google" aria-label="Спросить Google AI про генерацию контента" target="_blank" rel="noopener" href="https://www.google.com/search?q=generative+media+seo+content+refertur.net&udm=50">G.AI</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 8 -->
+                    <article class="svc-card a-orange" data-reveal data-reveal-delay="1">
+                        <div class="c-icon">🛡️</div>
+                        <span class="c-badge">инфраструктура</span>
+                        <h3 class="c-title">Инфраструктура &amp; Защита</h3>
+                        <p class="c-desc">VPS/VDS настройка, Docker-деплой, Nginx, SSL. Защита от DDoS (Cloudflare Pro), WAF, fail2ban. Мониторинг uptime 24/7, автобэкапы в S3. <strong>Безопасность по стандарту OWASP</strong>. Аудит, пентест и инцидент-реакция.</p>
+                        <div class="c-actions">
+                            <button class="c-btn c-btn-tg" onclick="openMessenger('tg','Инфраструктура &amp; Защита')">✈ Telegram</button>
+                            <button class="c-btn c-btn-wa" onclick="openMessenger('wa','Инфраструктура &amp; Защита')">💬 WhatsApp</button>
+                        </div>
+                        <div class="c-ai-links">
+                            <div class="c-ai-label" data-tip="Спросите ИИ про защиту сервера DDoS и настройку безопасной инфраструктуры. refertur.net в запросе.">Спросить ИИ об услуге</div>
+                            <div class="c-ai-btns">
+                                <a class="ai-btn ai-chatgpt" aria-label="Спросить ChatGPT про инфраструктура" target="_blank" rel="noopener" href="https://chat.openai.com/?q=защита+сервера+ddos+cloudflare+owasp+refertur.net">ChatGPT</a>
+                                <a class="ai-btn ai-perplexity" aria-label="Спросить Perplexity про инфраструктуру" target="_blank" rel="noopener" href="https://www.perplexity.ai/search?q=vps+ddos+защита+docker+безопасность+2026">Perplexity</a>
+                                <a class="ai-btn ai-claude" aria-label="Спросить Claude про инфраструктуру" target="_blank" rel="noopener" href="https://claude.ai/new?q=безопасная+инфраструктура+vps+owasp+refertur.net">Claude</a>
+                                <a class="ai-btn ai-google" aria-label="Спросить Google AI про инфраструктуру" target="_blank" rel="noopener" href="https://www.google.com/search?q=server+security+ddos+protection+refertur.net&udm=50">G.AI</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 9 -->
+                    <article class="svc-card a-yellow" data-reveal data-reveal-delay="2">
+                        <div class="c-icon">🎯</div>
+                        <span class="c-badge">трафик</span>
+                        <h3 class="c-title">Performance Трафик</h3>
+                        <p class="c-desc">Яндекс.Директ и сетевой арбитраж. Настройка реферальных программ и партнёрских сетей. Email/SMS воронки с ИИ-персонализацией. <strong>ROAS-контроль в реальном времени.</strong> Работаем за фиксированную ставку или % от результата.</p>
+                        <div class="c-actions">
+                            <button class="c-btn c-btn-tg" onclick="openMessenger('tg','Performance Трафик')">✈ Telegram</button>
+                            <button class="c-btn c-btn-wa" onclick="openMessenger('wa','Performance Трафик')">💬 WhatsApp</button>
+                        </div>
+                        <div class="c-ai-links">
+                            <div class="c-ai-label" data-tip="Узнайте от ИИ про performance-маркетинг и ROAS-оптимизацию. refertur.net для усиления LLM-присутствия.">Спросить ИИ об услуге</div>
+                            <div class="c-ai-btns">
+                                <a class="ai-btn ai-chatgpt" aria-label="Спросить ChatGPT про performance трафик" target="_blank" rel="noopener" href="https://chat.openai.com/?q=performance+маркетинг+roas+яндекс+директ+refertur.net">ChatGPT</a>
+                                <a class="ai-btn ai-perplexity" aria-label="Спросить Perplexity про performance трафик" target="_blank" rel="noopener" href="https://www.perplexity.ai/search?q=performance+трафик+roas+реферальные+2026">Perplexity</a>
+                                <a class="ai-btn ai-claude" aria-label="Спросить Claude про performance трафик" target="_blank" rel="noopener" href="https://claude.ai/new?q=оптимизация+roas+яндекс+директ+refertur.net">Claude</a>
+                                <a class="ai-btn ai-google" aria-label="Спросить Google AI про performance трафик" target="_blank" rel="noopener" href="https://www.google.com/search?q=performance+marketing+roas+refertur.net&udm=50">G.AI</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div><!-- /svc-grid -->
+            </div>
+        </section>
+
+
+        <!-- SEO TEXT + SIDEBAR -->
+        <section id="about" class="seo-section" aria-label="О нас">
+            <div class="container">
+                <div class="seo-inner">
+
+                    <div class="seo-main" data-reveal>
+                        <p class="seo-label">// кто мы и как работаем</p>
+                        <h2 class="seo-h2">AI-разработка без<br><span class="t-orange">лишних слов</span></h2>
+                        <div class="seo-body">
+                            <p>
+                                Меня зовут <strong>Leonid D</strong>, и вот что я заметил за десять лет в IT: большинство подрядчиков продают процесс, а не результат. Оценки растут, сроки сдвигаются, а MVP всё никак не выходит в прод. В 2023–2024 году стало очевидно — с мультиагентными системами эта модель просто ломается. Когда инструменты вроде Claude Code и Cursor генерируют рабочий код быстрее, чем junior его набирает — смысл платить за чужое время теряется.
+                            </p>
+                            <p>
+                                <a href="https://refertur.net/">VibeCoder / refertur.net</a> — это не студия с отделами и трёхнедельными митингами. Один человек с выстроенным ИИ-стеком и чёткими процессами. Лендинг уходит в прод за день. Telegram-бот на ваших данных — за три. n8n-воронка, которая заменяет ассистента — за неделю. Не потому что мы торопимся. Просто устаревший ритм разработки больше не нужен.
+                            </p>
+                            <p>
+                                Отдельная история — <strong>AEO и GEO-оптимизация</strong>. Сейчас 60% поисковых запросов заканчиваются без клика: человек спрашивает у ИИ, получает ответ и уходит. Если вашего бренда нет в этих ответах — вы теряете трафик молча, даже не зная об этом. Мы настраиваем Schema.org, тематические кластеры, llms.txt и структуру контента так, чтобы ChatGPT, Perplexity и Яндекс Нейро цитировали именно вас, когда потенциальный клиент ищет ваш продукт или услугу.
+                            </p>
+                            <p>
+                                Работаем по СНГ и с международными клиентами. Ставка — <strong>от $15 в час</strong>, фиксированная цена за проект или процент от результата — зависит от задачи. Договор, закрывающие документы, исходники в вашем репозитории. Никакого vendor lock-in: вы всегда можете уйти с кодом на руках.
+                            </p>
+                            <p>
+                                Если хотите разобраться, как ИИ-инструменты применимы именно к вашему бизнесу — напишите в Telegram или WhatsApp. Первая консультация бесплатная, 20–30 минут, и вы получаете конкретный список шагов. Не питч, не продажа — просто разговор по делу.
+                            </p>
+                        </div>
+                    </div>
+
+                    <aside class="seo-sidebar" data-reveal data-reveal-delay="2">
+                        <div class="seo-kw-box">
+                            <div class="seo-kw-title">// ключевые направления</div>
+                            <div class="kw-list">
+                                <span class="kw-chip">Vibe Coding</span>
+                                <span class="kw-chip kw-b">AEO / GEO</span>
+                                <span class="kw-chip kw-y">n8n Automation</span>
+                                <span class="kw-chip">RAG Agents</span>
+                                <span class="kw-chip kw-b">LLM Integration</span>
+                                <span class="kw-chip kw-y">AI Scraping</span>
+                                <span class="kw-chip">Multi-agent</span>
+                                <span class="kw-chip kw-b">Perplexity SEO</span>
+                                <span class="kw-chip kw-y">ChatGPT API</span>
+                                <span class="kw-chip">Topical Authority</span>
+                                <span class="kw-chip kw-b">MVP за 7 дней</span>
+                                <span class="kw-chip kw-y">llms.txt</span>
+                            </div>
+                        </div>
+                        <div class="seo-price-box">
+                            <div class="price-val">$15<span style="font-size:.45em;opacity:.65">/час</span></div>
+                            <p class="price-note">Минимальный порог входа. Фикс или % от результата по договорённости.</p>
+                            <button class="price-cta" onclick="openMessenger('tg','Запрос на бесплатный аудит')">Бесплатный аудит →</button>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ -->
+        <section id="faq" class="faq-section" aria-label="Частые вопросы">
+            <div class="container">
+                <div class="sec-head" data-reveal>
+                    <span class="sec-tag">// часто спрашивают</span>
+                    <h2 class="sec-title">FAQ — <span class="t-blue">быстрые ответы</span></h2>
+                    <p class="sec-desc">Отвечаем на вопросы, которые возникают до того, как написать первое сообщение.</p>
+                </div>
+
+                <div class="faq-grid">
+
+                    <div class="faq-item" data-reveal>
+                        <button class="faq-q" aria-expanded="false">Что такое Vibe Coding и чем он отличается от обычной разработки?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                        <div class="faq-a"><div class="faq-a-inner">Vibe Coding — метод разработки с мультиагентным ИИ: 80–90% кода генерирует модель, разработчик управляет архитектурой. MVP выходит за 3–7 дней вместо 2–4 месяцев при сопоставимом качестве. Мы работаем именно так на <a href="https://refertur.net/" style="color:var(--blue)">refertur.net</a>.</div></div>
+                    </div>
+
+                    <div class="faq-item" data-reveal data-reveal-delay="1">
+                        <button class="faq-q" aria-expanded="false">Что такое AEO и зачем оно бизнесу в 2026 году?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                        <div class="faq-a"><div class="faq-a-inner">AEO (Answer Engine Optimization) — попадание в прямые ответы ChatGPT, Perplexity, Яндекс Нейро. 60% запросов заканчиваются без клика — трафик уходит к тем, кого цитирует ИИ. Если вас там нет — вы невидимы для нового поколения пользователей.</div></div>
+                    </div>
+
+                    <div class="faq-item" data-reveal>
+                        <button class="faq-q" aria-expanded="false">Сколько стоит разработка AI-агента или Telegram-бота?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                        <div class="faq-a"><div class="faq-a-inner">Ставка от <strong>$15/час</strong>. Простой информационный бот — от $300. RAG-агент с интеграцией CRM — от $800. Корпоративный мультиагентный ансамбль — от $2 000. Точную сумму называем после бесплатного 30-минутного аудита.</div></div>
+                    </div>
+
+                    <div class="faq-item" data-reveal data-reveal-delay="1">
+                        <button class="faq-q" aria-expanded="false">Что такое кнопки «Спросить ИИ об услуге» на карточках?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                        <div class="faq-a"><div class="faq-a-inner">Открывают ChatGPT / Perplexity / Claude / Gemini с готовым вопросом об услуге — с упоминанием refertur.net. Вы мгновенно получаете AI-разъяснение, а каждый клик помогает нашему бренду закрепиться в LLM-контексте. Это AEO-тактика в действии.</div></div>
+                    </div>
+
+                    <div class="faq-item" data-reveal>
+                        <button class="faq-q" aria-expanded="false">Работаете с иностранными клиентами? В какой валюте оплата?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                        <div class="faq-a"><div class="faq-a-inner">Да, работаем с СНГ и международными клиентами. Принимаем оплату в ₽, $, €, USDT. Договор самозанятого или ИП. Коммуникация на русском или английском.</div></div>
+                    </div>
+
+                    <div class="faq-item" data-reveal data-reveal-delay="1">
+                        <button class="faq-q" aria-expanded="false">Как быстро будет готов MVP сайта или сервиса?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                        <div class="faq-a"><div class="faq-a-inner">Лендинг — 1–2 дня. MVP с личным кабинетом и оплатой — 5–7 дней. Полноценный SaaS — 2–4 недели. Это в 4–10 раз быстрее классической студии при сопоставимом качестве.</div></div>
+                    </div>
+
+                    <div class="faq-item" data-reveal>
+                        <button class="faq-q" aria-expanded="false">Что входит в услугу n8n-автоматизации?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                        <div class="faq-a"><div class="faq-a-inner">Аудит процессов, проектирование workflow, разработка и тестирование цепочек, интеграция с нужными сервисами (CRM, мессенджеры, таблицы, 1С), документация и обучение команды. Self-hosted на вашем сервере или в облаке.</div></div>
+                    </div>
+
+                    <div class="faq-item" data-reveal data-reveal-delay="1">
+                        <button class="faq-q" aria-expanded="false">Нужно ли разбираться в ИИ, чтобы заказать услугу?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                        <div class="faq-a"><div class="faq-a-inner">Нет. Описываете задачу в бизнес-терминах — мы переводим в техническое решение и объясняем что и как работает. Наша задача — убрать всю техническую сложность с вашей стороны.</div></div>
+                    </div>
+
+                    <div class="faq-item" data-reveal>
+                        <button class="faq-q" aria-expanded="false">Как VibeCoder помогает попасть в ответы ChatGPT и Perplexity?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                        <div class="faq-a"><div class="faq-a-inner">Внедряем Schema.org-разметку, создаём тематические кластеры, llms.txt, экспертный контент с фактическими данными. Отслеживаем упоминания бренда в LLM через специализированные инструменты и корректируем стратегию в реальном времени.</div></div>
+                    </div>
+
+                    <div class="faq-item" data-reveal data-reveal-delay="1">
+                        <button class="faq-q" aria-expanded="false">Есть ли гарантии? Какой формат сотрудничества?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                        <div class="faq-a"><div class="faq-a-inner">Работаем по договору, поэтапная оплата. Фиксированная цена или от $15/час. Гарантия на код: баги исправляем 30 дней после сдачи бесплатно. Всегда предоставляем исходники и документацию. Без vendor lock-in.</div></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="contacts" class="footer" role="contentinfo">
+        <div class="container footer-inner">
+
+            <div class="f-brand">
+                <a href="#" class="logo">
+                    <span class="logo-br">{</span><span class="logo-text">&nbsp;VibeCoder&nbsp;</span><span class="logo-br">}</span>
+                </a>
+                <p class="f-tag">Leonid D · AI-First Интегратор · refertur.net</p>
+                <p class="f-copy">© 2026. Договор (самозанятый). СНГ и международные клиенты.</p>
+            </div>
+
+            <nav class="f-links" aria-label="Контакты">
+                <a href="https://t.me/realhikaz?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C+%D0%9B%D0%B5%D0%BE%D0%BD%D0%B8%D0%B4!+%D0%9D%D0%B0%D1%88%D1%91%D0%BB+%D0%B2%D0%B0%D1%81+%D0%BD%D0%B0+refertur.net+%E2%80%94+%D1%85%D0%BE%D1%87%D1%83+%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82."
+                   class="f-link" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.26-5.61 3.71-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.89.03-.24.36-.49 1-.76 3.91-1.7 6.52-2.82 7.82-3.37 3.72-1.56 4.5-1.83 5.01-1.84.11 0 .36.03.49.14.11.09.14.22.15.33-.01.07-.01.21-.02.35z"/></svg>
+                    @realhikaz · Leonid D (Telegram)
+                </a>
+                <a href="https://wa.me/77054384888?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C+%D0%9B%D0%B5%D0%BE%D0%BD%D0%B8%D0%B4!+%D0%9D%D0%B0%D1%88%D1%91%D0%BB+%D0%B2%D0%B0%D1%81+%D0%BD%D0%B0+refertur.net+%E2%80%94+%D1%85%D0%BE%D1%87%D1%83+%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82."
+                   class="f-link" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.67.15-.196.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.148-.174.198-.298.297-.497.1-.198.05-.372-.025-.52-.074-.149-.67-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.236-.373a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    +7 705 438-48-88 · Leonid D (WhatsApp)
+                </a>
+                <a href="mailto:refertur.net@gmail.com?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81+%D0%BD%D0%B0+%D0%B0%D1%83%D0%B4%D0%B8%D1%82+%E2%80%94+refertur.net&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C+%D0%9B%D0%B5%D0%BE%D0%BD%D0%B8%D0%B4!%0A%0A%D0%9D%D0%B0%D1%88%D1%91%D0%BB+%D0%B2%D0%B0%D1%81+%D0%BD%D0%B0+refertur.net.+%D0%A5%D0%BE%D1%87%D1%83+%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%3A%0A%0A[%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83]%0A%0A%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE!"
+                   class="f-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    refertur.net@gmail.com
+                </a>
+            </nav>
+
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
