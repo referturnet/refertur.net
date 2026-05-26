@@ -12,7 +12,7 @@
 
 ## Фаза 2 — Документация и планирование (2026-05/06) ✅ ЗАВЕРШЕНО
 * [x] `docs/migration-plan.md` — полный план миграции HTML → Blocksy/Spectra
-* [x] `docs/content-map.md` — карта секций сайта
+* [x] `docs/content-map.md` — карта секций сайта ✅ UPDATED
 * [x] `docs/wordpress-github-sync.md` — CI/CD инструкция
 * [x] `ARCHITECTURE.md` — живая память проекта ✅ NEW
 * [x] `research/mcp-wordpress-woocommerce.md` — Deep Research: MCP vs SSH ✅ NEW
@@ -30,18 +30,18 @@
 * [x] Анализ legacy HTML и полная распаковка на секции
 * [x] Обновить `docs/content-map.md` с детальной картой секций
 
-### 3.3 Gutenberg Patterns 🔄 В РАБОТЕ
+### 3.3 Gutenberg Patterns ✅ ЗАВЕРШЕНО
 * [x] Создать `docs/patterns/hero.json` (главная секция + CTA)
 * [x] Создать `docs/patterns/services.json` (9 карточек услуг)
 * [x] Создать `docs/patterns/faq.json` (FAQ аккордеон)
-* [x] Создать `docs/patterns/market-stats.json` (3 цифры) ✅ NEW
+* [x] Создать `docs/patterns/market-stats.json` (3 цифры)
 
 ### 3.4 Child Theme Assets ✅ ЗАВЕРШЕНО
 * [x] `assets/css/custom.css` — кастомные стили поверх Blocksy
 * [x] `assets/js/main.js` — reveal-анимации, FAQ toggle, messenger открытие
 * [x] `functions.php` — исправлена логика подключения ассетов и зависимостей ✅ NEW
 
-### 3.5 Сборка главной страницы
+### 3.5 Сборка главной страницы 🔄 В РАБОТЕ
 * [ ] Hero секция (заголовок + CTA)
 * [ ] Market stats (3 цифры)
 * [ ] Services grid (9 карточек)
