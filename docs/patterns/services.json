@@ -1,0 +1,116 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "referturnet/services-grid",
+  "title": "Services Grid",
+  "category": "referturnet",
+  "description": "4-column responsive services grid with icons",
+  "keywords": ["services", "grid", "features"],
+  "content": [
+    {
+      "blockName": "core/group",
+      "attrs": {
+        "className": "services-grid-section",
+        "style": {
+          "spacing": {"padding": {"top": "60px", "bottom": "60px"}}
+        }
+      },
+      "innerBlocks": [
+        {
+          "blockName": "core/heading",
+          "attrs": {
+            "level": 2,
+            "textAlign": "center",
+            "content": "Послуги та переваги"
+          }
+        },
+        {
+          "blockName": "core/columns",
+          "attrs": {"className": "services-grid"},
+          "innerBlocks": [
+            {
+              "blockName": "core/column",
+              "innerBlocks": [
+                {
+                  "blockName": "core/image",
+                  "attrs": {
+                    "className": "service-icon",
+                    "url": "/assets/icons/search.svg"
+                  }
+                },
+                {
+                  "blockName": "core/heading",
+                  "attrs": {"level": 3, "content": "Пошук турів"}
+                },
+                {
+                  "blockName": "core/paragraph",
+                  "attrs": {"content": "Підберемо ідеальний тур за вашими побажаннями"}
+                }
+              ]
+            },
+            {
+              "blockName": "core/column",
+              "innerBlocks": [
+                {
+                  "blockName": "core/image",
+                  "attrs": {
+                    "className": "service-icon",
+                    "url": "/assets/icons/shield.svg"
+                  }
+                },
+                {
+                  "blockName": "core/heading",
+                  "attrs": {"level": 3, "content": "Гарантія якості"}
+                },
+                {
+                  "blockName": "core/paragraph",
+                  "attrs": {"content": "Перевірені туроператори та безпека"}
+                }
+              ]
+            },
+            {
+              "blockName": "core/column",
+              "innerBlocks": [
+                {
+                  "blockName": "core/image",
+                  "attrs": {
+                    "className": "service-icon",
+                    "url": "/assets/icons/dollar.svg"
+                  }
+                },
+                {
+                  "blockName": "core/heading",
+                  "attrs": {"level": 3, "content": "Економія 40-80%"}
+                },
+                {
+                  "blockName": "core/paragraph",
+                  "attrs": {"content": "Найкращі ціни без переплат"}
+                }
+              ]
+            },
+            {
+              "blockName": "core/column",
+              "innerBlocks": [
+                {
+                  "blockName": "core/image",
+                  "attrs": {
+                    "className": "service-icon",
+                    "url": "/assets/icons/support.svg"
+                  }
+                },
+                {
+                  "blockName": "core/heading",
+                  "attrs": {"level": 3, "content": "Підтримка 24/7"}
+                },
+                {
+                  "blockName": "core/paragraph",
+                  "attrs": {"content": "Завжди на зв'язку через Telegram/WhatsApp"}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
