@@ -1,0 +1,41 @@
+{
+  "title": "Market Stats",
+  "slug": "market-stats",
+  "categories": ["refertur"],
+  "content": "<!-- wp:columns {\"style\":{\"spacing\":{\"margin\":{\"top\":\"50px\",\"bottom\":\"50px\"}}}} -->\
+<div class=\\\"wp-block-columns\\\">\
+  <!-- wp:column -->\
+  <div class=\\\"wp-block-column\\\">\
+    <!-- wp:heading {\\\"textAlign\\\":\\\"center\\\",\\\"level\\\":3} -->\
+    <h3 class=\\\"has-text-align-center\\\">92%</h3>\
+    <!-- /wp:heading -->\
+    <!-- wp:paragraph {\\\"align\\\":\\\"center\\\"} -->\
+    <p class=\\\"has-text-align-center\\\">кода пишется с ИИ (2026 г.)</p>\
+    <!-- /wp:paragraph -->\
+  </div>\
+  <!-- /wp:column -->\
+\
+  <!-- wp:column -->\
+  <div class=\\\"wp-block-column\\\">\
+    <!-- wp:heading {\\\"textAlign\\\":\\\"center\\\",\\\"level\\\":3} -->\
+    <h3 class=\\\"has-text-align-center\\\">60%</h3>\
+    <!-- /wp:heading -->\
+    <!-- wp:paragraph {\\\"align\\\":\\\"center\\\"} -->\
+    <p class=\\\"has-text-align-center\\\">Zero-Click поисковых запросов</p>\
+    <!-- /wp:paragraph -->\
+  </div>\
+  <!-- /wp:column -->\
+\
+  <!-- wp:column -->\
+  <div class=\\\"wp-block-column\\\">\
+    <!-- wp:heading {\\\"textAlign\\\":\\\"center\\\",\\\"level\\\":3} -->\
+    <h3 class=\\\"has-text-align-center\\\">10×</h3>\
+    <!-- /wp:heading -->\
+    <!-- wp:paragraph {\\\"align\\\":\\\"center\\\"} -->\
+    <p class=\\\"has-text-align-center\\\">ускорение Time-to-Market</p>\
+    <!-- /wp:paragraph -->\
+  </div>\
+  <!-- /wp:column -->\
+</div>\
+<!-- /wp:columns -->"
+}
