@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "referturnet/hero",
+  "title": "Hero Section",
+  "category": "referturnet",
+  "description": "Hero section with H1 and dual CTA buttons for Telegram/WhatsApp",
+  "keywords": ["hero", "cta", "telegram", "whatsapp"],
+  "content": [
+    {
+      "blockName": "core/group",
+      "attrs": {
+        "className": "hero-section",
+        "style": {
+          "spacing": {"padding": {"top": "80px", "bottom": "80px"}}
+        }
+      },
+      "innerBlocks": [
+        {
+          "blockName": "core/heading",
+          "attrs": {
+            "level": 1,
+            "textAlign": "center",
+            "content": "Рефертур.нет — Подбор турів з комісією від $15/год"
+          }
+        },
+        {
+          "blockName": "core/paragraph",
+          "attrs": {
+            "align": "center",
+            "className": "hero-subtitle",
+            "content": "Економте 40-80% на турах з гарантією якості та безпеки"
+          }
+        },
+        {
+          "blockName": "core/buttons",
+          "attrs": {"layout": {"type": "flex", "justifyContent": "center"}},
+          "innerBlocks": [
+            {
+              "blockName": "core/button",
+              "attrs": {
+                "text": "Telegram",
+                "url": "https://t.me/refertur_cta",
+                "className": "is-style-fill cta-telegram"
+              }
+            },
+            {
+              "blockName": "core/button",
+              "attrs": {
+                "text": "WhatsApp",
+                "url": "https://wa.me/refertur",
+                "className": "is-style-outline cta-whatsapp"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
