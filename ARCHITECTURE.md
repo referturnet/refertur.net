@@ -180,6 +180,22 @@ wordpress/wp-content/plugins/refertur-site-core/
 
 ## 9. Как использовать этот файл
 
+### 📝 Синхронизация с GitHub Wiki
+
+**Правило:** При каждом значимом изменении ARCHITECTURE.md — обновить Wiki:
+
+1. Открыть [Wiki > Architecture](https://github.com/referturnet/refertur.net/wiki/Architecture)
+2. Нажать кнопку "Edit"
+3. Добавить ссылку на актуальную версию в репозитории
+4. Сохранить
+
+**Частота обновления:**
+- При изменении tech stack
+- При добавлении новых Decision Log записей
+- При изменении структуры репозитория
+
+**Alternatively:** Можно автоматизировать через GitHub Actions (TODO: Фаза 5).
+
 При каждой новой сессии:
 1. Прочитать ARCHITECTURE.md для понимания текущего состояния
 2. Прочитать ROADMAP.md для понимания следующего шага
