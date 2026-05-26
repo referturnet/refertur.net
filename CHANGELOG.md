@@ -4,6 +4,22 @@
 
 ---
 
+## [0.4.0] — 2026-05-26
+
+### Добавлено
+- `ARCHITECTURE.md` — живая архитектурная память проекта
+- `research/mcp-wordpress-woocommerce.md` — Deep Research: MCP vs SSH/REST API
+
+### Изменено
+- `INDEX.md` — добавлены ARCHITECTURE.md, research/, обновлены статусы
+- `ROADMAP.md` — Фаза 1+2 отмечены как завершённые, детализирована Фаза 3 (5 подфаз)
+- `docs/content-map.md` — полный анализ 7 секций legacy HTML, карта миграции → Gutenberg
+
+### Решения
+- SSH + rsync как основной деплой (вместо MCP для VPS)
+- MCP как вспомогательный инструмент для AI-ассистентов
+- Blocksy + Spectra (вместо Elementor/Divi) для производительности
+
 ## [0.3.0] — 2026-05-26
 
 ### Добавлено
