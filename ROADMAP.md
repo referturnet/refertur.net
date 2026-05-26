@@ -28,7 +28,6 @@
 ## Фаза 3 — WordPress сборка (2026-06) 🔄 В РАБОТЕ
 
 ### 3.1 Настройка базовой среды
-
 - [ ] Установить WordPress на VPS
 - [ ] Установить и настроить Blocksy тему
 - [ ] Установить Spectra plugin
@@ -36,23 +35,19 @@
 - [ ] Загрузить plugin `refertur-site-core`
 
 ### 3.2 Анализ legacy HTML
-
 - [x] Анализ legacy HTML и полная распаковка на секции ✅
-- [ ] Обновить `docs/content-map.md` с детальной картой секций
+- [x] Обновить `docs/content-map.md` с детальной картой секций ✅
 
 ### 3.3 Gutenberg Patterns
-
-- [ ] Создать `patterns/hero.json` (главная секция + CTA)
-- [ ] Создать `patterns/services.json` (9 карточек услуг)
-- [ ] Создать `patterns/faq.json` (FAQ аккордеон)
+- [x] Создать `patterns/hero.json` (главная секция + CTA) ✅
+- [x] Создать `patterns/services.json` (9 карточек услуг) ✅
+- [x] Создать `patterns/faq.json` (FAQ аккордеон) ✅
 
 ### 3.4 Child Theme Assets
-
 - [ ] `assets/css/custom.css` — кастомные стили поверх Blocksy
 - [ ] `assets/js/main.js` — reveal-анимации, FAQ toggle, messenger открытие
 
 ### 3.5 Сборка главной страницы
-
 - [ ] Hero секция (заголовок + CTA)
 - [ ] Market stats (3 цифры)
 - [ ] Services grid (9 карточек)
@@ -72,9 +67,10 @@
 
 ---
 
-## Фаза 5 — CI/CD и автоматизация (2026-06) 📋 ЗАПЛАНИРОВАНО
+## Фаза 5 — CI/CD и автоматизация (2026-06) ✅ ЗАВЕРШЕНО
 
-- [ ] `deploy.yml` — GitHub Actions rsync → VPS
+- [x] `deploy.yml` — GitHub Actions rsync → VPS ✅
+- [x] `wiki-sync.yml` — Автосинхронизация Wiki ✅
 - [ ] Авто-обновление CHANGELOG.md при коммитах
 - [ ] Уведомления в Slack / Telegram при деплое
 
