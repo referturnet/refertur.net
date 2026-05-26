@@ -1,8 +1,8 @@
 # INDEX — refertur.net Repository
 
-> **Последнее обновление:** 2026-05-26  
-> **Ветка:** main  
-> **Статус:** В активной разработке
+> **Последнее обновление:** 2026-05-26
+> **Ветка:** main
+> **Статус:** Фаза 3 — WordPress сборка (в работе)
 
 Этот файл — живой индекс всех файлов и папок репозитория. Обновляется при каждом значимом изменении.
 
@@ -12,40 +12,42 @@
 
 ```
 refertur.net/
-├── INDEX.md                          # Этот файл — индекс всех файлов
-├── ROADMAP.md                        # Роадмап проекта
-├── CHANGELOG.md                      # Лог всех изменений
-├── README.md                         # Описание репозитория
+├── ARCHITECTURE.md          # Живая архитектурная память проекта ✅ NEW
+├── INDEX.md                 # Этот файл — индекс всех файлов
+├── ROADMAP.md               # Роадмап проекта
+├── CHANGELOG.md             # Лог всех изменений
+├── README.md                # Описание репозитория
 │
-├── legacy/                           # Исходный HTML-сайт (до WordPress)
-│   └── homepage-source.html          # Полная HTML-страница refertur.net
+├── legacy/
+│   └── homepage-source.html
 │
-├── docs/                             # Документация
-│   ├── migration-plan.md             # План миграции HTML → Blocksy/Spectra
-│   ├── content-map.md                # Карта контента: секции → блоки WP
-│   └── wordpress-github-sync.md      # Инструкция: связка GitHub + WordPress
+├── docs/
+│   ├── migration-plan.md
+│   ├── content-map.md
+│   └── wordpress-github-sync.md
 │
-├── wordpress-migration/              # Всё для переноса на WordPress
+├── research/
+│   └── mcp-wordpress-woocommerce.md  # Deep research: MCP vs SSH ✅ NEW
+│
+├── wordpress-migration/
 │   ├── child-theme/
 │   │   └── refertur-child/
-│   │       ├── style.css             # Стили child theme (Blocksy)
-│   │       ├── functions.php         # Хуки, подключение assets, JS
+│   │       ├── style.css
+│   │       ├── functions.php
 │   │       └── assets/
-│   │           ├── css/
-│   │           │   └── custom.css    # Кастомные стили
-│   │           └── js/
-│   │               └── main.js       # JS: reveal, FAQ, messenger, canvas
+│   │           ├── css/custom.css
+│   │           └── js/main.js
 │   ├── helper-plugin/
 │   │   └── refertur-site-core/
-│   │       └── refertur-site-core.php # Плагин: AI-кнопки, schema, CTA
+│   │       └── refertur-site-core.php
 │   └── patterns/
-│       ├── hero.json                 # Gutenberg pattern: Hero секция
-│       ├── services.json             # Gutenberg pattern: Сетка услуг
-│       └── faq.json                  # Gutenberg pattern: FAQ аккордеон
+│       ├── hero.json
+│       ├── services.json
+│       └── faq.json
 │
 └── .github/
     └── workflows/
-        └── deploy.yml                # GitHub Actions: деплой на WP-сервер
+        └── deploy.yml
 ```
 
 ---
@@ -53,49 +55,63 @@ refertur.net/
 ## Файлы по категориям
 
 ### Корень репозитория
+
 | Файл | Назначение | Статус |
 |------|-----------|--------|
+| `ARCHITECTURE.md` | Живая архитектурная память проекта | ✅ Готов |
 | `README.md` | Описание проекта | ✅ Готов |
 | `INDEX.md` | Индекс всех файлов | ✅ Готов |
 | `ROADMAP.md` | Роадмап проекта | ✅ Готов |
 | `CHANGELOG.md` | Лог изменений | ✅ Готов |
 
 ### Legacy (исходный сайт)
+
 | Файл | Назначение | Статус |
 |------|-----------|--------|
 | `legacy/homepage-source.html` | Исходный HTML refertur.net | ✅ Готов |
 
 ### Документация
+
 | Файл | Назначение | Статус |
 |------|-----------|--------|
 | `docs/migration-plan.md` | План миграции на WordPress | ✅ Готов |
-| `docs/content-map.md` | Карта секций и блоков | ✅ Готов |
+| `docs/content-map.md` | Карта секций и блоков | 🔄 Обновляется |
 | `docs/wordpress-github-sync.md` | GitHub Actions + WP деплой | ✅ Готов |
 
+### Research
+
+| Файл | Назначение | Статус |
+|------|-----------|--------|
+| `research/mcp-wordpress-woocommerce.md` | MCP vs SSH/WP-CLI/REST API | ✅ Готов |
+
 ### WordPress Child Theme
+
 | Файл | Назначение | Статус |
 |------|-----------|--------|
 | `wordpress-migration/child-theme/refertur-child/style.css` | Заголовок темы, базовые стили | ✅ Готов |
-| `wordpress-migration/child-theme/refertur-child/functions.php` | Хуки WP, подключение скриптов | ✅ Готов |
+| `wordpress-migration/child-theme/refertur-child/functions.php` | wp_enqueue: app.css + app.js | ✅ Готов |
 | `wordpress-migration/child-theme/refertur-child/assets/css/custom.css` | Кастомный CSS | 🔄 В работе |
-| `wordpress-migration/child-theme/refertur-child/assets/js/main.js` | Кастомный JS | 🔄 В работе |
+| `wordpress-migration/child-theme/refertur-child/assets/js/main.js` | JS: reveal, FAQ, messenger, canvas | 🔄 В работе |
 
 ### Helper Plugin
+
 | Файл | Назначение | Статус |
 |------|-----------|--------|
-| `wordpress-migration/helper-plugin/refertur-site-core/refertur-site-core.php` | Основной файл плагина | 🔄 В работе |
+| `wordpress-migration/helper-plugin/refertur-site-core/refertur-site-core.php` | Шорткод [refertur_cta], v0.1.0 | ✅ Скелет готов |
 
 ### Gutenberg Patterns
+
 | Файл | Назначение | Статус |
 |------|-----------|--------|
-| `wordpress-migration/patterns/hero.json` | Hero секция | 📋 Запланировано |
-| `wordpress-migration/patterns/services.json` | Сетка услуг | 📋 Запланировано |
+| `wordpress-migration/patterns/hero.json` | Hero секция | 🔄 В работе |
+| `wordpress-migration/patterns/services.json` | Сетка услуг (9 карточек) | 📋 Запланировано |
 | `wordpress-migration/patterns/faq.json` | FAQ аккордеон | 📋 Запланировано |
 
 ### CI/CD
+
 | Файл | Назначение | Статус |
 |------|-----------|--------|
-| `.github/workflows/deploy.yml` | Авто-деплой на WP при push | 📋 Запланировано |
+| `.github/workflows/deploy.yml` | Авто-деплой rsync → VPS при push | 📋 Запланировано |
 
 ---
 
@@ -117,4 +133,4 @@ refertur.net/
 - изменении статуса существующего файла
 - переименовании или удалении файлов
 
-Дата обновления в заголовке (`Последнее обновление`) обновляется вручную или через GitHub Actions.
+Дату обновления в заголовке обновлять вручную.
