@@ -1,0 +1,48 @@
+/* custom.css - refertur-child */
+
+/* Reveal Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Counter Styles */
+.spectra-counter-block .wp-block-spectra-counter__number {
+  font-weight: 700;
+  color: var(--theme-palette-color-1);
+}
+
+/* FAQ Styles */
+.spectra-faq-block .wp-block-spectra-faq__question {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.spectra-faq-block .wp-block-spectra-faq__question:hover {
+  color: var(--theme-palette-color-1);
+}
+
+/* Messenger Buttons */
+.refertur-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.refertur-cta-btn:hover {
+  transform: scale(1.05);
+}
+
+.refertur-cta-btn.tg { background-color: #0088cc; color: #fff; }
+.refertur-cta-btn.wa { background-color: #25d366; color: #fff; }
