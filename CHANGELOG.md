@@ -4,6 +4,11 @@
 
 ---
 
+## [0.4.1] — 2026-05-26
+
+### Изменено
+- `wordpress-migration/child-theme/refertur-child/functions.php` — исправлена логика подключения стилей и скриптов. Добавлена зависимость дочерней темы от родительской (`refertur-child-parent`), обновлены версии ассетов до `0.1.1`.
+
 ## [0.4.0] — 2026-05-26
 
 ### Добавлено
@@ -34,19 +39,3 @@
 - `wordpress-migration/child-theme/refertur-child/assets/js/main.js`
 - `helper-plugin/refertur-site-core.php` — полный код плагина
 - `.github/workflows/deploy.yml` — GitHub Actions деплой
-
-## [0.2.0] — 2026-05-26
-
-### Добавлено
-- `wordpress-migration/child-theme/refertur-child/style.css` — заголовок Blocksy child theme
-- `wordpress-migration/child-theme/refertur-child/functions.php` — базовые хуки WP
-- `wordpress-migration/helper-plugin/refertur-site-core/refertur-site-core.php` — стартовый файл плагина
-- `docs/` — папка документации создана
-
-## [0.1.0] — 2026-05-26
-
-### Добавлено
-- Первый коммит: структура репозитория
-- `README.md` — описание проекта
-- `legacy/homepage-source.html` — исходный HTML-сайт refertur.net
-- Основные папки: `legacy/`, `docs/`, `wordpress-migration/`
