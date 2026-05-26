@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "referturnet/faq",
+  "title": "FAQ Section",
+  "category": "referturnet",
+  "description": "FAQ section with accordion-style questions and answers",
+  "keywords": ["faq", "questions", "answers", "accordion"],
+  "content": [
+    {
+      "blockName": "core/group",
+      "attrs": {
+        "className": "faq-section",
+        "style": {
+          "spacing": {"padding": {"top": "60px", "bottom": "60px"}}
+        }
+      },
+      "innerBlocks": [
+        {
+          "blockName": "core/heading",
+          "attrs": {
+            "level": 2,
+            "textAlign": "center",
+            "content": "FAQ - Часті питання"
+          }
+        },
+        {
+          "blockName": "core/group",
+          "attrs": {"className": "faq-items"},
+          "innerBlocks": [
+            {
+              "blockName": "core/details",
+              "attrs": {"summary": "Як працює сервіс?"},
+              "innerBlocks": [
+                {
+                  "blockName": "core/paragraph",
+                  "attrs": {
+                    "content": "Ви залишаєте заявку через Telegram або WhatsApp, наші експерти підбирають найкращі варіанти турів за вашими побажаннями і бюджетом. Після вибору - допоможемо з бронюванням."
+                  }
+                }
+              ]
+            },
+            {
+              "blockName": "core/details",
+              "attrs": {"summary": "Чому ціни нижчі?"},
+              "innerBlocks": [
+                {
+                  "blockName": "core/paragraph",
+                  "attrs": {
+                    "content": "Ми працюємо без маркетингових надбавок і офісних витрат. Наша комісія - від $15/год, що дозволяє вам економити 40-80% порівняно з традиційними агентствами."
+                  }
+                }
+              ]
+            },
+            {
+              "blockName": "core/details",
+              "attrs": {"summary": "Чи безпечно бронювати?"},
+              "innerBlocks": [
+                {
+                  "blockName": "core/paragraph",
+                  "attrs": {
+                    "content": "Так! Ми працюємо тільки з перевіреними туроператорами та гарантуємо якість послуг. Всі бронювання оформляються офіційно з повним пакетом документів."
+                  }
+                }
+              ]
+            },
+            {
+              "blockName": "core/details",
+              "attrs": {"summary": "Як зв'язатися?"},
+              "innerBlocks": [
+                {
+                  "blockName": "core/paragraph",
+                  "attrs": {
+                    "content": "Натисніть на кнопку Telegram або WhatsApp вгорі сторінки. Ми на зв'язку 24/7 і готові відповісти на всі ваші питання."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
